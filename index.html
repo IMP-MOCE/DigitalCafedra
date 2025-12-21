@@ -4,236 +4,279 @@
     <meta charset="UTF-8">
     <title>Revo Coffee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Montserrat:wght@400;700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
 
-    <header>
-      <nav>
-        <img src="assets/icons/LOGO.png" alt="Revo Coffee">
-        <ul>
-          <li><a href="#">Туда</a></li>
-          <li><a href="#">Сюда</a></li>
-          <li><a href="#">Ссылка на страницу</a></li>
-          <li><a href="#">Ссылка на страницу</a></li>
-          <li><a href="#">Ссылка на страницу</a></li>
-          <li><a href="#">Ссылка на страницу</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="hero-wrapper">
+      
+      <aside class="hero-left">
+        <a href="#" class="brand-logo">
+          <img src="assets/icons/LOGO.png" alt="Revo Coffee">
+        </a>
+        
+        <div class="hero-title-block">
+          <p class="hero-subtitle">Your Personalized Coffee</p>
+          <h1 class="hero-title-composite">
+            <span class="text-top">YOUR</span>
+            <span class="text-middle">PERSONALIZED</span>
+            <span class="text-bottom">COFFEE</span>
+          </h1>
+        </div>
+      </aside>
 
-    <main>
+      <div class="hero-center">
+        <img src="assets/img/background.png" alt="Coffee Process" class="hero-image">
+        <div class="play-btn"></div>
+      </div>
 
-      <section>
-        <header>
-          <p>Your Personalized Coffee</p>
-          <h1>Your Personalized Coffee</h1>
-        </header>
-        <figure>
-          <img src="assets/img/background.png" alt="Баннер">
-        </figure>
+      <header class="hero-right">
+        <div class="user-cart">
+          <a href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM1 2V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.28 15 7.17 14.89 7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L21.16 4.96C21.25 4.8 21.3 4.62 21.3 4.45C21.3 3.62 20.62 2.95 19.8 2.95H5.21L4.27 2H1ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z"/>
+            </svg>
+            <span class="cart-badge">2</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li><a href="#hero">Head</a></li>
+            <li><a href="#features">Coffee</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#combos">Combos</a></li>
+            <li><a href="#giftset">Giftset</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    </div>
+
+    <main class="page-main">
+
+      <section class="features" id="features">
+        <div class="container">
+            <header class="section-header features__header">
+              <p class="section-header__subtitle">Your Personalized Coffee</p>
+              <h2 class="section-header__title">Coffee Build Your Base</h2>
+            </header>
+
+            <div class="features__grid">
+                <article class="feature-card">
+                  <header class="feature-card__header">
+                    <img src="assets/icons/coffee_shop.png" alt="магазин кофе" class="feature-card__icon">
+                    <h3 class="feature-card__title">Истоки</h3>
+                  </header>
+                  <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
+                </article>
+
+                <article class="feature-card">
+                  <header class="feature-card__header">
+                    <img src="assets/icons/coffee_nuts.png" alt="табличка с зернами кофе" class="feature-card__icon">
+                    <h3 class="feature-card__title">Качество</h3>
+                  </header>
+                  <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
+                </article>
+
+                <article class="feature-card">
+                  <header class="feature-card__header">
+                    <img src="assets/icons/two_coffee_nuts.png" alt="две банки с зернами кофе" class="feature-card__icon">
+                    <h3 class="feature-card__title">Зерна</h3>
+                  </header>
+                  <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
+                </article>
+
+                <article class="feature-card">
+                  <header class="feature-card__header">
+                    <img src="assets/icons/coffee_machine.png" alt="кофемашина" class="feature-card__icon">
+                    <h3 class="feature-card__title">Обжарка</h3>
+                  </header>
+                  <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
+                </article>
+            </div>
+        </div>
       </section>
 
-      <section>
-        <header>
-          <p>Your Personalized Coffee</p>
-          <h2>Coffee Build Your Base</h2>
-        </header>
+      <section class="catalog" id="products">
+        <div class="container">
+            <header class="section-header catalog__header">
+              <p class="section-header__subtitle">Choose Your Favorite</p>
+              <h2 class="section-header__title">Что-то там</h2>
+            </header>
 
-        <article>
-          <header>
-            <img src="assets/icons/coffee_shop.png" alt="магазин кофе">
-            <h3>Текст</h3>
-          </header>
-          <p>Для современного мира существующая теория играет важную роль в&nbsp;формировании поэтапного и&nbsp;последовательного развития общества.</p>
-        </article>
+            <div class="catalog__grid">
+                <article class="product-card">
+                  <figure class="product-card__figure">
+                      <img src="assets/img/coffee_yellow.png" alt="REVO Morning" class="product-card__image">
+                  </figure>
+                  <div class="product-card__content">
+                      <p class="product-card__price">99.000</p>
+                      <h3 class="product-card__title">REVO Morning</h3>
+                      <p class="product-card__desc">Картельные сговоры не допускают ситуации, при которой многие известные личности.</p>
+                      <div class="product-card__actions">
+                        <a href="#" class="btn btn--primary">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                  </div>
+                </article>
 
-        <article>
-          <header>
-            <img src="assets/icons/coffee_nuts.png" alt="табличка с зернами кофе">
-            <h3>Текст</h3>
-          </header>
-          <p>Для современного мира существующая теория играет важную роль в&nbsp;формировании поэтапного и&nbsp;последовательного развития общества.</p>
-        </article>
+                <article class="product-card">
+                   <figure class="product-card__figure">
+                      <img src="assets/img/coffee_blue.png" alt="REVO Everyday" class="product-card__image">
+                   </figure>
+                   <div class="product-card__content">
+                      <p class="product-card__price">85.000</p>
+                      <h3 class="product-card__title">REVO Everyday</h3>
+                      <p class="product-card__desc">Картельные сговоры не допускают ситуации, при которой многие известные личности.</p>
+                      <div class="product-card__actions">
+                        <a href="#" class="btn btn--primary">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                   </div>
+                </article>
 
-        <article>
-          <header>
-            <img src="assets/icons/two_coffee_nuts.png" alt="две банки с зернами кофе">
-            <h3>Текст</h3>
-          </header>
-          <p>Для современного мира существующая теория играет важную роль в&nbsp;формировании поэтапного и&nbsp;последовательного развития общества.</p>
-        </article>
-
-        <article>
-          <header>
-            <img src="assets/icons/coffee_machine.png" alt="кофемашина">
-            <h3>Текст</h3>
-          </header>
-          <p>Для современного мира существующая теория играет важную роль в&nbsp;формировании поэтапного и&nbsp;последовательного развития общества.</p>
-        </article>
+                <article class="product-card">
+                   <figure class="product-card__figure">
+                      <img src="assets/img/coffee_orange.png" alt="REVO Origin" class="product-card__image">
+                   </figure>
+                   <div class="product-card__content">
+                      <p class="product-card__price">139.000</p>
+                      <h3 class="product-card__title">REVO Origin</h3>
+                      <p class="product-card__desc">Картельные сговоры не допускают ситуации, при которой многие известные личности.</p>
+                      <div class="product-card__actions">
+                        <a href="#" class="btn btn--primary">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                   </div>
+                </article>
+                
+                 <article class="product-card">
+                   <figure class="product-card__figure">
+                      <img src="assets/img/coffee_brown.png" alt="REVO Traditional" class="product-card__image">
+                   </figure>
+                   <div class="product-card__content">
+                      <p class="product-card__price">75.000</p>
+                      <h3 class="product-card__title">REVO Traditional</h3>
+                      <p class="product-card__desc">Картельные сговоры не допускают ситуации, при которой многие известные личности.</p>
+                      <div class="product-card__actions">
+                        <a href="#" class="btn btn--primary">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                   </div>
+                </article>
+            </div>
+        </div>
       </section>
 
-      <section>
-        <header>
-          <p>Choose Your Favorite</p>
-          <h2>Текст заголовок 2 уровня</h2>
-        </header>
+      <section class="giftset" id="giftset">
+        <div class="container giftset__container">
+            <header class="section-header giftset__header">
+              <p class="section-header__subtitle">Best Gift For Best Friend</p>
+              <h2 class="section-header__title">GIFTSET</h2>
+            </header>
 
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/coffee_yellow.png" alt="желтый пакетик с кофе REVO Morning">
-              <figcaption>REVO Morning</figcaption>
-            </figure>
-            <p>99.000</p>
-          </header>
-          <p>Картельные сговоры не&nbsp;допускают ситуации, при которой многие известные личности указаны как претенденты на&nbsp;роль ключевых факторов.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
+            <article class="gift-card">
+              <div class="gift-card__image-wrapper">
+                 <img src="assets/img/coffee_box.png" alt="Коробка с кофе" class="gift-card__image">
+              </div>
+              
+              <div class="gift-card__content">
+                  <p class="gift-card__price">285.000</p>
+                  <h3 class="gift-card__title">Giftset "Что-то там"</h3>
+                  <p class="gift-card__text">Как принято считать, независимые государства превращены в посмешище, хотя само их существование приносит пользу.</p>
 
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/coffee_blue.png" alt="синий пакетик с кофе REVO Everyday">
-              <figcaption>REVO Everyday</figcaption>
-            </figure>
-            <p>85.000</p>
-          </header>
-          <p>Картельные сговоры не&nbsp;допускают ситуации, при которой многие известные личности указаны как претенденты на&nbsp;роль ключевых факторов.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
+                  <div class="gift-card__specs">
+                    <div class="spec-item">
+                      <img src="assets/icons/IC_coffee.png" alt="зерна" class="spec-item__icon">
+                      <div class="spec-item__text">
+                          <span class="spec-item__label">Зерна</span>
+                          <span class="spec-item__value">В блендере</span>
+                      </div>
+                    </div>
+                    <div class="spec-item">
+                      <img src="assets/icons/IC_Mountain.png" alt="горы" class="spec-item__icon">
+                      <div class="spec-item__text">
+                          <span class="spec-item__label">Высота</span>
+                          <span class="spec-item__value">700 – 800m</span>
+                      </div>
+                    </div>
+                  </div>
 
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/coffee_orange.png" alt="оранжевый пакетик с кофе REVO Origin">
-              <figcaption>REVO Origin</figcaption>
-            </figure>
-            <p>139.000</p>
-          </header>
-          <p>Картельные сговоры не&nbsp;допускают ситуации, при которой многие известные личности указаны как претенденты на&nbsp;роль ключевых факторов.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
-
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/coffee_brown.png" alt="коричневый пакетик с кофе REVO что-то там">
-              <figcaption>REVO что-то там</figcaption>
-            </figure>
-            <p>75.000</p>
-          </header>
-          <p>Картельные сговоры не&nbsp;допускают ситуации, при которой многие известные личности указаны как претенденты на&nbsp;роль ключевых факторов.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
+                  <div class="gift-card__actions">
+                    <a href="#" class="btn btn--primary">Купить</a>
+                    <a href="#" class="btn btn--text">Подробнее</a>
+                  </div>
+              </div>
+            </article>
+        </div>
       </section>
 
-      <section>
-        <header>
-          <p>Best Gift For Best Friend</p>
-          <h2>Giftset</h2>
-        </header>
+      <section class="combos" id="combos">
+        <div class="container">
+            <header class="section-header combos__header">
+              <p class="section-header__subtitle">Your Personalized Coffee</p>
+              <h2 class="section-header__title">COMBO Что-то там</h2>
+            </header>
 
-        <article>
-          <header>
-            <h3>Подарочный что-то там</h3>
-            <p>285.000</p>
-          </header>
+            <div class="combos__grid">
+                <article class="combo-card">
+                  <figure class="combo-card__figure">
+                    <img src="assets/img/w_cofee_brown.png" alt="Combo Revo" class="combo-card__image">
+                  </figure>
+                  <div class="combo-card__content">
+                      <p class="combo-card__price">147.000 <span class="combo-card__old-price">155.000</span></p>
+                      <h3 class="combo-card__title">Combo Revo Что-то там</h3>
+                      <p class="combo-card__desc">Достаточно крепкий, чтобы заставить вас проснуться.</p>
+                      <div class="combo-card__actions">
+                        <a href="#" class="btn btn--round">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                  </div>
+                </article>
 
-          <figure>
-            <img src="assets/img/coffee_box.png" alt="Коробка с кофе и аксессуарами">
-            <figcaption>Подарочный что-то там</figcaption>
-          </figure>
+                <article class="combo-card">
+                  <figure class="combo-card__figure">
+                    <img src="assets/img/w_coffee_blue.png" alt="Combo Everyday" class="combo-card__image">
+                  </figure>
+                  <div class="combo-card__content">
+                      <p class="combo-card__price">156.000 <span class="combo-card__old-price">165.000</span></p>
+                      <h3 class="combo-card__title">Combo Revo Everyday</h3>
+                      <p class="combo-card__desc">Сбалансированный вкус для ежедневного употребления.</p>
+                      <div class="combo-card__actions">
+                        <a href="#" class="btn btn--round">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                  </div>
+                </article>
 
-          <p>Как принято считать, независимые государства превращены в&nbsp;посмешище, хотя само их&nbsp;существование приносит несомненную пользу обществу.</p>
-
-          <dl>
-            <section>
-              <img src="assets/icons/IC_coffee.png" alt="иконка зерен кофе">
-              <dt>Зерна</dt>
-              <dd>В блендере</dd>
-            </section>
-            <section>
-              <img src="assets/icons/IC_Mountain.png" alt="иконка горы">
-              <dt>Высота горы</dt>
-              <dd>700 – 800m</dd>
-            </section>
-          </dl>
-
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
-      </section>
-
-      <section>
-        <header>
-          <p>Your Personalized Coffee</p>
-          <h2>Комбо что-то там</h2>
-        </header>
-
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/w_cofee_brown.png" alt="Combo Revo что-то там">
-              <figcaption>Combo Revo что-то там</figcaption>
-            </figure>
-            <p>147.000 (155.000)</p>
-          </header>
-          <p>Как уже неоднократно упомянуто, акционеры крупнейших компаний призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно верифицированы.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
-
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/w_coffee_blue.png" alt="Combo Revo Everyday">
-              <figcaption>Combo Revo Everyday</figcaption>
-            </figure>
-            <p>156.000 (165.000)</p>
-          </header>
-          <p>Как уже неоднократно упомянуто, акционеры крупнейших компаний призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно верифицированы.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
-
-        <article>
-          <header>
-            <figure>
-              <img src="assets/img/w_coffee_red.png" alt="Combo Revo Honey">
-              <figcaption>Combo Revo Honey</figcaption>
-            </figure>
-            <p>275.000 (260.000)</p>
-          </header>
-          <p>Как уже неоднократно упомянуто, акционеры крупнейших компаний призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно верифицированы.</p>
-          <p>
-            <a href="#">Ссылка</a>
-            <a href="#">Ссылка</a>
-          </p>
-        </article>
+                <article class="combo-card">
+                  <figure class="combo-card__figure">
+                    <img src="assets/img/w_coffee_red.png" alt="Combo Honey" class="combo-card__image">
+                  </figure>
+                  <div class="combo-card__content">
+                      <p class="combo-card__price">275.000 <span class="combo-card__old-price">260.000</span></p>
+                      <h3 class="combo-card__title">Combo Revo Honey</h3>
+                      <p class="combo-card__desc">Сладость меда в названии говорит о методе обработки.</p>
+                      <div class="combo-card__actions">
+                        <a href="#" class="btn btn--round">Купить</a>
+                        <a href="#" class="btn btn--text">Подробнее</a>
+                      </div>
+                  </div>
+                </article>
+            </div>
+        </div>
       </section>
 
     </main>
 
-    <footer>
-      <p>© Revo Coffee Вьетнам – 2018</p>
+    <footer class="page-footer" id="contacts">
+      <div class="container page-footer__container">
+        <p class="page-footer__copyright">© Revo Coffee Вьетнам – 2018</p>
+      </div>
     </footer>
 
   </body>
