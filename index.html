@@ -22,7 +22,7 @@
           <p class="hero-subtitle">Your Personalized Coffee</p>
           <h1 class="hero-title-composite">
             <span class="text-top">YOUR</span>
-            <span class="text-middle">PERSONALIZED</span>
+            <span class="text-middle">PERSONAL</span>
             <span class="text-bottom">COFFEE</span>
           </h1>
         </div>
@@ -42,7 +42,14 @@
             <span class="cart-badge">2</span>
           </a>
         </div>
-        <nav class="main-nav">
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+            <span class="menu-toggle__line"></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
           <ul class="main-nav__list">
             <li><a href="#hero">Head</a></li>
             <li><a href="#features">Coffee</a></li>
@@ -57,14 +64,12 @@
     </div>
 
     <main class="page-main">
-
       <section class="features" id="features">
         <div class="container">
             <header class="section-header features__header">
               <p class="section-header__subtitle">Your Personalized Coffee</p>
               <h2 class="section-header__title">Coffee Build Your Base</h2>
             </header>
-
             <div class="features__grid">
                 <article class="feature-card">
                   <header class="feature-card__header">
@@ -73,7 +78,6 @@
                   </header>
                   <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
                 </article>
-
                 <article class="feature-card">
                   <header class="feature-card__header">
                     <img src="assets/icons/coffee_nuts.png" alt="табличка с зернами кофе" class="feature-card__icon">
@@ -81,7 +85,6 @@
                   </header>
                   <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
                 </article>
-
                 <article class="feature-card">
                   <header class="feature-card__header">
                     <img src="assets/icons/two_coffee_nuts.png" alt="две банки с зернами кофе" class="feature-card__icon">
@@ -89,7 +92,6 @@
                   </header>
                   <p class="feature-card__text">Для современного мира существующая теория играет важную роль в формировании поэтапного развития.</p>
                 </article>
-
                 <article class="feature-card">
                   <header class="feature-card__header">
                     <img src="assets/icons/coffee_machine.png" alt="кофемашина" class="feature-card__icon">
@@ -107,7 +109,6 @@
               <p class="section-header__subtitle">Choose Your Favorite</p>
               <h2 class="section-header__title">Что-то там</h2>
             </header>
-
             <div class="catalog__grid">
                 <article class="product-card">
                   <figure class="product-card__figure">
@@ -123,7 +124,6 @@
                       </div>
                   </div>
                 </article>
-
                 <article class="product-card">
                    <figure class="product-card__figure">
                       <img src="assets/img/coffee_blue.png" alt="REVO Everyday" class="product-card__image">
@@ -138,7 +138,6 @@
                       </div>
                    </div>
                 </article>
-
                 <article class="product-card">
                    <figure class="product-card__figure">
                       <img src="assets/img/coffee_orange.png" alt="REVO Origin" class="product-card__image">
@@ -153,7 +152,6 @@
                       </div>
                    </div>
                 </article>
-                
                  <article class="product-card">
                    <figure class="product-card__figure">
                       <img src="assets/img/coffee_brown.png" alt="REVO Traditional" class="product-card__image">
@@ -178,17 +176,14 @@
               <p class="section-header__subtitle">Best Gift For Best Friend</p>
               <h2 class="section-header__title">GIFTSET</h2>
             </header>
-
             <article class="gift-card">
               <div class="gift-card__image-wrapper">
                  <img src="assets/img/coffee_box.png" alt="Коробка с кофе" class="gift-card__image">
               </div>
-              
               <div class="gift-card__content">
                   <p class="gift-card__price">285.000</p>
                   <h3 class="gift-card__title">Giftset "Что-то там"</h3>
                   <p class="gift-card__text">Как принято считать, независимые государства превращены в посмешище, хотя само их существование приносит пользу.</p>
-
                   <div class="gift-card__specs">
                     <div class="spec-item">
                       <img src="assets/icons/IC_coffee.png" alt="зерна" class="spec-item__icon">
@@ -205,7 +200,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="gift-card__actions">
                     <a href="#" class="btn btn--primary">Купить</a>
                     <a href="#" class="btn btn--text">Подробнее</a>
@@ -221,7 +215,6 @@
               <p class="section-header__subtitle">Your Personalized Coffee</p>
               <h2 class="section-header__title">COMBO Что-то там</h2>
             </header>
-
             <div class="combos__grid">
                 <article class="combo-card">
                   <figure class="combo-card__figure">
@@ -237,7 +230,6 @@
                       </div>
                   </div>
                 </article>
-
                 <article class="combo-card">
                   <figure class="combo-card__figure">
                     <img src="assets/img/w_coffee_blue.png" alt="Combo Everyday" class="combo-card__image">
@@ -252,7 +244,6 @@
                       </div>
                   </div>
                 </article>
-
                 <article class="combo-card">
                   <figure class="combo-card__figure">
                     <img src="assets/img/w_coffee_red.png" alt="Combo Honey" class="combo-card__image">
@@ -278,6 +269,12 @@
         <p class="page-footer__copyright">© Revo Coffee Вьетнам – 2018</p>
       </div>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+      ↑
+    </button>
+
+    <script src="scripts/menu.js"></script>
 
   </body>
 </html>
