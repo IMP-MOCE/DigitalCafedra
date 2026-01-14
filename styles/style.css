@@ -770,9 +770,6 @@ img {
     height: 100%;
     object-fit: cover;
   }
-}
-
-@media (max-width: 768px) {
 
   .hero-wrapper {
     padding-top: 80px;
@@ -851,5 +848,26 @@ img {
   .gift-card__image-wrapper,
   .gift-card__content {
     padding: 20px;
+  }
+
+  .hero-title-composite {
+    font-size: 32px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .text-middle {
+    margin-right: 0;
+    font-size: 24px;
+    white-space: normal; 
+    padding: 5px 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 5px auto; 
+  }
+
+  .hero-left {
+    padding: 20px;
+    overflow: hidden;
   }
 }
